@@ -1,0 +1,48 @@
+--- Lecture 8: Package Management & System Info ---
+
+1. System Pehchaan (System Info)
+
+- hostname: System ka naam dekhne ke liye.
+- hostname -i: System ki IP address janne ke liye.
+- cat /etc/os-release: OS ka version aur details dekhne ke liye.
+
+2. Software Lagana (Package Management - YUM) :
+ 
+- sudo yum install httpd -y: Apache Web Server install karne ke liye.
+- sudo yum update -y: Saare softwares ko update karne ke liye.
+- sudo yum remove [package]: Software hatane ke liye.
+
+* Note:- Agar aapne login karte hi sudo su (ya sudo su -) likh diya hai aur aapka terminal ab         [root@...]# dikha raha hai, toh aap ab system ki "Owner" ban chuki hain.
+         Ab aapko kisi bhi command ke aage sudo lagane ki zaroorat nahi hai. Aap seedha yum
+         install ya systemctl start likh sakti hain .Like this:-
+
+- yum install httpd -y: Apache Web Server install karne ke liye.
+- yum update -y: Saare softwares ko update karne ke liye.
+- yum remove [package]: Software hatane ke liye.
+
+
+3. Service Control (Server Management):-
+
+-  systemctl start httpd: Server chalu karne ke liye.
+-  systemctl status httpd: Dekhne ke liye ki server "Active" hai ya nahi.
+-  systemctl stop httpd: Server band karne ke liye.
+-  chkconfig httpd off:  ab system ko manually har bar start krna pdenga.
+-  chkconfig httpd on: Reboot ke baad bhi server apne aap chalu ho jaye.
+                               OR
+-  systemctl enable httpd : (purana tarika  chkconfig hai , par naya version ye hai) 
+                           Isse server restart ke baad bhi apne aap start ho jata hai.
+
+3.1 -  systemctl vs service :- Yahan par thoda sa "Generation Gap" hai.
+
+* Service (Purana Tarika):- Pehle Linux mein services ko manage karne ke liye service command                             use hoti thi. Dr. Bhupendra sir ne wahi bataya hai kyunki wo see                             khne mein aasaan hai. Like This:-
+-service httpd start:Server chalu krne k liye.
+-service httpd status: Dekhne k liye ki server active h ya nhi.
+-service httpd stop: Server bnd krne k liye.
+
+* Systemctl (Naya aur Standard Tarika):- Aaj kal ke naye Linux (jaise Amazon Linux 2023 jo ap                                         use kar rahi ho) mein systemd naam ka system hota ha                                         Iska asli aur powerful command systemctl hai.
+
+4. Data Dhoondna (Search & Sort):-
+
+- grep "word" file: File ke andar koi khaas word search karne ke liye.
+- sort file: Content ko alphabetically line-wise set karne ke liye.
+

@@ -1,0 +1,48 @@
+1.Basic Introduction:-
+
+* pwd (Print Working Directory): aap abhi system me kaha khade h ye batata hai.
+* whoami: apka username batata hai (jaise ec2-user).
+* clear : Terminal ki screen saff krne k liye.
+
+2. Navigation:-
+ 
+* ls (list) : folder k andr ky ky saman h vo dikhata hai.
+* cd (folder_name) : kisi folder k andr jane k liye.
+* cd .. :ek step piche anek liye (space is imp).
+* cd~ : doirect home directory pr wapis jane k liye.
+* cd - : pichli working directroy pe toggle krne k liye.
+
+3. File Management :-
+
+* touch [file_name]: khali file banane k liye.
+* cat [file_name]: File k andr ky likha h vo bhr se hi dekhne k liye.
+* mv [purana] [naya] : file ko  move krne ya uska nam rename krne k liye.
+* cp [source] [destination] : File ki dublicate copy banane k liye.
+
+4. hidden files :-
+
+* hidden file kese bnaye? : file ke nam k age bus ek dot (.) lga do Ex - (.secret.txt)
+* hidden file kese dkehe ? : command chalao: ls -a.
+
+5.Path (absolute vs relative) :-
+
+* Absolute Path: jo / (root) se shuru ho (poora pata).
+* Relative Path: jo abhi aap jaha ho wha se shuru ho (chota pata).
+
+6. editor(VI editor):-
+
+* vi [file_name] : file ke andr likhne k liye.
+* i dbao: insert mode(Likhna shuru krne k liye).
+* Esc dabao: Save krke bhr ane k liye.
+* :wq dabao: Save krke bhr ane k liye.
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+1. File management:-
+
+* mkdir [name] : Naya folder banane k liye.
+* mkdir -p A/B/C : ek ke andr ek {nested} folders banane k liye.
+* rmdir [name] : Khali folder delete krne k liye.
+* rm -rf [name] : bhara hua folder ya file forcefully delete krne k liye.
