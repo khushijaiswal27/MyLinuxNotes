@@ -1,42 +1,54 @@
-1.Basic Introduction:-
+1. Basic Introduction:-
 
-* pwd (Print Working Directory): aap abhi system me kaha khade h ye batata hai.
-* whoami: apka username batata hai (jaise ec2-user).
-* clear : Terminal ki screen saff krne k liye.
+* pwd (Print Working Directory): Displays the full path of the current directory you are in.
+
+* whoami: Displays the username of the current user (e.g., ec2-user).
+
+* clear: Clears the terminal screen for a better view.
 
 2. Navigation:-
- 
-* ls (list) : folder k andr ky ky saman h vo dikhata hai.
-* cd (folder_name) : kisi folder k andr jane k liye.
-* cd .. :ek step piche anek liye (space is imp).
-* cd~ : doirect home directory pr wapis jane k liye.
-* cd - : pichli working directroy pe toggle krne k liye.
 
-3. File Management :-
+* ls (List): Lists the files and folders inside the current directory.
 
-* touch [file_name]: khali file banane k liye.
-* cat [file_name]: File k andr ky likha h vo bhr se hi dekhne k liye.
-* mv [purana] [naya] : file ko  move krne ya uska nam rename krne k liye.
-* cp [source] [destination] : File ki dublicate copy banane k liye.
+* cd [folder_name] (Change Directory): Used to enter a specific folder.
 
-4. hidden files :-
+* cd ..: Moves one level back to the parent directory (Note: space is mandatory).
 
-* hidden file kese bnaye? : file ke nam k age bus ek dot (.) lga do Ex - (.secret.txt)
-* hidden file kese dkehe ? : command chalao: ls -a.
+* cd ~: Instantly returns to the user's home directory.
 
-5.Path (absolute vs relative) :-
+* cd -: Toggles back to the previous working directory.
 
-* Absolute Path: jo / (root) se shuru ho (poora pata).
-* Relative Path: jo abhi aap jaha ho wha se shuru ho (chota pata).
+3. File Management:-
 
-6. editor(VI editor):-
+* touch [file_name]: Creates an empty file.
 
-* vi [file_name] : file ke andr likhne k liye.
-* i dbao: insert mode(Likhna shuru krne k liye).
-* Esc dabao: Save krke bhr ane k liye.
-* :wq dabao: Save krke bhr ane k liye.
+* cat [file_name]: Displays the content of a file directly in the terminal.
 
+* mv [source] [destination]: Used to move a file or rename it.
 
+* cp [source] [destination]: Creates a duplicate copy of a file.
+
+4. Hidden Files:-
+
+* How to create a hidden file: Add a dot (.) at the beginning of the filename (Example: .secret.txt).
+
+* How to view hidden files: Use the command ls -a (All).
+
+5. Path (Absolute vs. Relative):-
+
+* Absolute Path: The full path starting from the root directory (/).
+
+* Relative Path: A path based on your current location in the file system.
+
+6. Vi/Vim Editor:-
+
+* vi [file_name]: Opens the file in the Vi editor.
+
+* Press i: Enters Insert Mode (allows you to start typing).
+
+* Press Esc: Exits Insert Mode to enter Command Mode.
+
+* Type :wq: Saves the changes and exits the editor.
 
 
 
