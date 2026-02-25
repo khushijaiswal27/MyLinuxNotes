@@ -1,4 +1,4 @@
-# 🐧 My Linux Learning Library | #90DaysOfDevOps
+# 🐧 My Linux Learning Library |
 
 This repository is a structured collection of my Linux notes and practicals, organized into specific categories for better accessibility.
 
