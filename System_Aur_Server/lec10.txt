@@ -1,0 +1,63 @@
+Linux File Permissions & Ownership :-
+
+This section covers file security in Linux, including permissions (chmod), owners (chown), and groups (chgrp).
+
+1. Understanding File Details (ls -l):- When you run the ls -l command, you see a 10-character string (e.g., -rwxrwxrwx):
+
+* The First Character (File Type):
+
+- : Regular File
+
+d : Directory (Folder)
+
+l : Link File
+
+* The Remaining 9 Characters (3 Groups):
+
+First 3: Owner/User (The person who created the file)
+
+Middle 3: Group (A specific set of users with access)
+
+Last 3: Others (Everyone else on the system)
+
+2. Permission Types:-
+
+r (Read): Permission to view file content or list directory contents. (Value = 4)
+
+w (Write): Permission to modify or delete the file/folder. (Value = 2)
+
+x (Execute): Permission to run a script or enter a directory. (Value = 1)
+
+3. Method 1: Numeric (Absolute) Mode : In this method, we use numbers to set permissions.
+
+Formula: chmod <User><Group><Other> <filename>
+
+Common Examples:-
+
+chmod 777 file: Everyone gets full access (Read + Write + Execute).
+
+chmod 700 file: Only the Owner has full access; others have none.
+
+chmod 644 file: Owner can Read/Write; others can only Read.
+
+4. Method 2: Symbolic Mode : This method uses symbols: u (user), g (group), o (others), and a (all).
+
+Operators: + (add), - (remove), = (set exactly).
+
+Examples:
+
+chmod u+x script.sh: Add execute permission for the User.
+
+chmod g-w file: Remove write permission from the Group.
+
+chmod o=r file: Set Others' permission to Read only.
+
+5. Ownership Change Commands:-
+
+* chown (Change Owner): Used to change the ownership of a file.
+
+Example: sudo chown user1 filename
+
+* chgrp (Change Group): Used to change the group ownership of a file.
+
+Example: sudo chgrp group1 filename
